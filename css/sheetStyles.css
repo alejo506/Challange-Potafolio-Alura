@@ -620,3 +620,7 @@ header .navbar {
     }
 
 }
+
+.msg-error{
+ font-size: var(--font-size-small);
+}
