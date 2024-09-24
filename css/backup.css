@@ -1,0 +1,573 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-size-tiny: 0.75rem;
+    --font-size-small: 0.875rem;
+    --font-size-mid-small: 1rem;
+    --font-size-medium: 1.375rem;
+    --font-size-big: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #FCFAEE;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 16px;
+    color: rgb(7, 6, 6);
+    box-sizing: border-box;
+}
+
+/* SECTION HEADER */
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem; /* 56px */
+    padding: 1rem 2rem; /* 16px */
+    color: #464646;
+}
+
+.navbar__menu {
+    display: flex;
+    gap: 32px;
+}
+
+.navbar__item:not(:last-child) {
+    display: none;
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    font-size: 1rem; /* 16px */
+    font-weight: 700;
+    gap: 0.5rem; /* 8px */
+}
+
+.navbar__item--contact {
+    font-size: 0.875rem; /* 14px */
+    font-weight: 400;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /*16px*/
+    padding: 0 2rem 1rem; /* 0 16px 16px */
+    color: #464646;
+}
+
+.myphoto {
+    width: 6.125rem; /* 98px */
+    height: 6.125rem; /* 98px */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* 16px */
+}
+
+.intro {
+    font-weight: 700;
+    font-size: 1.375rem; /* 22px */
+}
+
+.education {
+    font-weight: 400;
+    font-size: 0.875rem; /* 14px */
+}
+
+.social-links {
+    display: flex;
+    font-weight: 600;
+    font-size: 0.875rem; /* 14px */
+    gap: 1rem; /* 16px */
+}
+
+.social-links a {
+    display: flex;
+}
+
+/* SECTION ABOUT ME */
+.about-me-section {
+    background-color: #507687;
+    display: flex;
+    padding: 1rem; /* 16px */
+    gap: 0.625rem; /* 10px */
+}
+
+.about-me-details {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 1rem;
+    padding: 1rem; /* 16px */
+}
+
+.about-me-details h2,
+.subtitle {
+    font-weight: 700;
+    font-size: 1.375rem; /* 22px */
+}
+
+.about-me-details p {
+    font-size: 0.875rem; /* 14px */
+    font-weight: 400;
+}
+
+.signature-img {
+    width: 8.75rem; /* 140px */
+    height: 3.25rem; /* 52px */
+}
+
+.subtitle {
+    color: #464646;
+    text-align: center;
+}
+
+/* COMMON SECTION */
+.common-section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; /* 16px */
+    gap: 2rem; /* 32px */
+}
+
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* 16px */
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 9.75rem; /* 156px */
+    height: 7.375rem; /* 118px */
+    gap: 0.5rem; /* 8px */
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 1rem; /* 16px */
+    box-shadow: 0px 0px 10px 0px #333 inset;
+}
+
+.item img {
+    width: 2rem; /* 28px */
+    height: 2rem; /* 28px */
+    flex-shrink: 0;
+}
+
+.item p {
+    color: #464646;
+    font-weight: 700;
+    font-size: 1rem; /* 16px */
+}
+
+/* SECTION EDUCATIONAL */
+.education-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem; /* 32px */
+    gap: 2rem; /* 32px */
+}
+
+.education-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* 16px */
+    justify-content: center;
+}
+
+.education-item {
+    display: flex;
+    flex-direction: column;
+    width: 18.5rem; /* 296px */
+    height: 10.5625rem; /* 169px */
+    gap: 0.5rem; /* 8px */
+}
+
+.education-figure {
+    text-align: center;
+    align-content: center;
+    height: 7.375rem;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -2px #333 inset;
+}
+
+.education-figure img {
+    width: 5.25rem; /* 84px */
+    height: 3.625rem; /* 58px */
+}
+
+.education-title {
+    font-weight: 700;
+    font-size: 1rem; /* 16px */
+    color: #464646;
+}
+
+.education-date {
+    font-weight: 500;
+    font-size: 0.875rem; /* 14px */
+    color: #464646;
+}
+
+/* SECTION PROJECTS */
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* 32px */
+    padding: 2rem; /* 32px */
+}
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem; /* 64px */
+    align-items: center;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* 16px */
+}
+
+.project-name {
+    font-size: 1rem; /* 16px */
+    font-weight: 700;
+    color: #464646;
+}
+
+.project-challenge {
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500;
+    color: #464646;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* 8px */
+}
+
+.project-image {
+    width: 18.5rem; /* 296px */
+    height: 9rem; /* 144px */
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem; /* 16px */
+}
+
+.project-links a {
+    padding: 0.75rem 1rem; /* 12px 16px */
+    font-size: 0.875rem; /* 14px */
+}
+
+.project-links a:nth-child(1) {
+    color: #FFFFFF;
+    background-color: #507687;
+}
+
+.project-links a:nth-child(2) {
+    color: #FFFFFF;
+    background-color: #2A7AE4;
+}
+
+
+/* SECTION FOOTER */
+.contact-section {
+    background-color: #507687;
+    padding: 2rem; /* 32px */
+}
+
+.contact-header h2,
+.contact-header p {
+    color: #ffffff;
+}
+
+.contact-header h2 {
+    font-size: 1.375rem; /* 22px */
+    font-weight: 700;
+    margin-bottom: 0.5rem; /* 8px */
+}
+
+.contact-header p {
+    font-size: 1rem; /* 16px */
+    font-weight: 500;
+    padding: 1rem 0; /* 16px 0 */
+    margin-bottom: 1rem; /* 16px */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* 32px */
+    margin-bottom: 2rem; /* 32px */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding: 0.5rem 0.75rem; /* 8px 12px */
+    gap: 0.25rem; /* 4px */
+}
+
+.form-group label {
+    color: #A2A2A2;
+    font-size: 0.75rem; /* 12px */
+    font-weight: 400;
+}
+
+.form-group input,
+.form-group textarea {
+    outline: none;
+    resize: none;
+    color: #464646;
+    font-size: 1rem; /* 16px */
+    font-weight: 400;
+}
+
+.form-group:focus-within label {
+    color: #2A7AE4;
+}
+
+.contact-form button {
+    background-color: #2A7AE4;
+    width: 8.3125rem; /* 133px */
+    height: 2.5rem; /* 40px */
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 0.875rem; /* 14px */
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content img {
+    display: none;
+}
+
+.developer {
+    padding: 2rem; /* 32px */
+    text-align: center;
+    font-size: 1rem; /* 16px */
+    font-weight: 500;
+    color: #464646;
+}
+
+
+/* MEDIA QUERIES */
+
+/* TABLET */
+@media (min-width: 834px) {
+
+    /* ! SECTION HEADER  */
+    .navbar__item--contact {
+        font-weight: 700;
+    }
+
+    /* ! HERO SECTION  */
+    .contact-info {
+        gap: 2rem;
+    }
+
+    .hero {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+
+    .myphoto {
+        width: 9.125rem; /* 146px a rem */
+        height: 9.125rem; /* 146px a rem */
+    }
+
+    .education,
+    .social-links {
+        font-size: 1rem;
+    }
+
+    /* ! COMMON SECTION  */
+    .common-section {
+        padding: 1rem; /* 32px a rem */
+    }
+
+    .item {
+        width: 13rem; /* 224px a rem */
+    }
+
+    /* ! SECTION EDUCATIONAL  */
+    .education-item {
+        width: 14rem; /* 224px a rem */
+    }
+
+    .project-image {
+        width: 41rem; /* 296px */
+        height: 20rem; /* 144px */
+    }
+
+    /* ! SECTION PROJECTS  */
+    .project-links a {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    /* ! SECTION FOOTER */
+    .contact-section {
+        width: 48rem; /* 768px */
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1071px) {
+
+    /* ! SECTION HEADER  */
+    .navbar__item:not(:last-child) {
+        display: block;
+    }
+
+    /* ! HERO SECTION  */
+    .intro {
+        font-weight: 700;
+        font-size: 3.25rem;
+    }
+
+    .myphoto {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .education {
+        font-size: 1.375rem; /* 22px */
+    }
+
+    /* ! SECTION ABOUT ME  */
+    .about-me-details h2,
+    .contact-header h2 {
+        font-size: 2rem;
+    }
+
+    .about-me-details p,
+    .education-date {
+        font-size: 1rem; /* 14px */
+    }
+
+    /* ! SECTION PROFILE */
+    .profile {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    /* ! SECTION COMMON */
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .item {
+        width: 11rem;
+    }
+
+    /* ! SECTION EDUCATIONAL */
+    .education-item {
+        width: 23rem;
+        height: auto;
+    }
+
+    .education-title {
+        font-size: 1.375rem;
+    }
+
+    .education-figure {
+        height: auto;
+        gap: 1rem;
+    }
+
+    .education-figure img {
+        width: 11.875rem;
+        height: 8.125rem;
+    }
+
+    /* ! SECTION PROJECTS */
+    .project-item {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .project-item:nth-child(2),
+    .project-item:nth-child(4) {
+        flex-direction: row-reverse;
+    }
+
+    .project-image {
+        width: 47rem;
+        height: 25.375rem;
+    }
+
+    .project-details {
+        justify-content: center;
+    }
+
+    .project-name {
+        font-size: 1.375rem;
+    }
+
+    .project-challenge {
+        font-size: 1rem; /* 14px */
+    }
+
+    /* ! SECTION FOOTER */
+    .footer-content {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footer-content img {
+        display: block;
+        max-width: 100%; /* Ensures image doesn't overflow its container */
+        height: 39.4rem; /* Keeps the aspect ratio */
+        flex: 1; /* Allows the image to take 1 part of the available space */
+    }
+
+    .contact-form button {
+        width: 9rem;
+        height: 3.188rem;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+}
