@@ -266,33 +266,41 @@
                 <form id="contact" class="contact-form" action="">
                     <div class="contact-header">
                         <h2>Contact</h2>
-                        <p>Would you like to contact me? Please fill out the following form, and I will get in touch
-                            with you as
-                            soon as possible.</p>
+                        <p>Would you like to contact me? Please fill out the following form, and I will get in touch with you as soon as possible.</p>
                     </div>
+                    
                     <div class="form-group">
                         <label for="fname">First Name</label>
                         <input type="text" autocomplete="off" id="fname" name="fname" required>
+                        <span id="fname-error" style="color: red;"></span>
                     </div>
+                    
                     <div class="form-group">
                         <label for="femail">Email Address</label>
                         <input type="email" autocomplete="off" id="femail" name="femail" required>
+                        <span id="femail-error" style="color: red;"></span>
                     </div>
+                    
                     <div class="form-group">
-                        <input type="text" autocomplete="off" id="subject" name="subject" placeholder="Subject"
-                            required>
+                        <input type="text" autocomplete="off" id="subject" name="subject" placeholder="Subject" required>
+                        <span id="subject-error" style="color: red;"></span>
                     </div>
+                    
                     <div class="form-group">
-                        <textarea autocomplete="off" id="message" name="message" placeholder="Your message"
-                            required></textarea>
+                        <textarea autocomplete="off" id="message" name="message" placeholder="Your message" required></textarea>
+                        <span id="message-error" style="color: red;"></span>
                     </div>
-                    <button type="submit">Send Message</button>
+                    
+                    <button type="submit" id="send" disabled>Send Message</button>
                 </form>
+                
             </section>
         </div>
         <hr class="divider">
         <p class="developer">Developed by Alejandro CM</p>
     </footer>
+
+    <script src="validations.js"></script>
 </body>
 
 </html>

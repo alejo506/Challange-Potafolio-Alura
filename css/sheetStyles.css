@@ -367,7 +367,6 @@ header .navbar {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-bottom: 2rem;
 }
 
 .form-group {
@@ -493,6 +492,7 @@ header .navbar {
     /* ! SECTION FOOTER */
     .contact-section {
         width: 48rem;
+        height: 37.4rem;
     }
 }
 
@@ -607,7 +607,7 @@ header .navbar {
         /* Ensures image doesn't overflow its container */
         max-width: 100%;
         /* Keeps the aspect ratio */
-        height: 39.4rem;
+        height: 41.4rem;
         /* Allows the image to take 1 part of the available space */
         flex: 1;
     }
