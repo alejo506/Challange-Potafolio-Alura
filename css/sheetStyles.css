@@ -406,12 +406,11 @@ header .navbar {
 }
 
 
-.footer {
+.footer-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
+
 
 .footer-content img {
     display: none;
